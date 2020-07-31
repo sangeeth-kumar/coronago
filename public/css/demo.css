@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+.xop-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 6% 2%;
+}
+
+.xop-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.xop-grid:after {
+  clear: both;
+}
+
+.xop-grid:after,
+.xop-box:before {
+  content: "";
+  display: table;
+}
+
+.xop-grid li {
+  width: 328px;
+  height: 328px;
+  display: inline-block;
+  margin: 60px;
+}
+
+.xop-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: auto;
+  border-radius: 12px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.xop-box:hover {
+  box-shadow: 3px 7px 7px;
+  transform: scale(1.05);
+}
+
+.xop-img-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/helpline.jpg);
+}
+
+.xop-img-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/hotspot.jpg);
+}
+
+.xop-img-3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/education.jpg);
+}
+
+.xop-img-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/symptoms.jpg);
+}
+.xop-img-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/contribution.jpg);
+}
+.xop-img-6 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    /* bottom, image */ url(../images/thankyou.jpg);
+}
+
+.xop-info {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.xop-info h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  color: #fff;
+  font-size: 42px;
+  margin: 0 100px;
+  padding: 30px 0 0 0;
+  line-height: 1.5;
+}
+#lan {
+  top: 150px;
+}
+.modal-title {
+  font-weight: 250;
+  color: #fff;
+  font-size: 30px;
+}
+.modal-body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+  text-align: justify;
+  margin: 20px;
+}
+
+.modal {
+  background-color: rgba(32, 30, 30, 0.8);
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  @media (min-width: 20em) {
+    height: 35%;
+    margin: 5% auto;
+    max-height: 57em;
+    max-width: 66em;
+    width: 85%;
+  }
+  > iframe,
+  > div {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+iframe {
+  animation-name: rot;
+  animation-duration: 1s;
+  height: 200px !important;
+  width: 360px !important;
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(15deg);
+    border-radius: 10px;
+    height: 60px;
+    width: 50px;
+  }
+  50% {
+    border-radius: 10px;
+  }
+  100% {
+    transform: rotate(0deg);
+    border-radius: 0px;
+    height: 200px;
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 700px; /* New width for default modal */
+  }
+  .modal-sm {
+    width: 350px; /* New width for small modal */
+  }
+}
+@media screen and (min-width: 992px) {
+  .modal-lg {
+    width: 950px; /* New width for large modal */
+  }
+}
+@media screen {
+  .modal-backdrop {
+    max-width: 0px;
+  }
+}
+
+@media screen and (min-width: 100px) {
+  #header {
+    width: 150%;
+  }
+}
+@media screen and (min-width: 450px) {
+  #header {
+    width: 100%;
+  }
+}
